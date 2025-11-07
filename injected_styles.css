@@ -1,0 +1,76 @@
+/* Styles for the injected content */
+
+/* --- Photograph Styles --- */
+#injected-photo-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#injected-profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px; /* Make it a soft rectangle for a more official look */
+    border: 2px solid #343a40; /* Darker, more professional border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Icon Button Styles --- */
+#injected-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.injected-icon-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Fixed width for a square-like button area */
+    height: 80px; /* Fixed height */
+    text-align: center;
+    text-decoration: none;
+    color: #495057;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px; /* Sharper, more official corners */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.injected-icon-button:hover {
+    background-color: #f8f9fa;
+    border-color: #0056b3; /* Deeper blue for hover */
+    color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.injected-icon-button .icon {
+    font-size: 30px; /* Large icon size */
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.injected-icon-button .text {
+    font-size: 14px; /* Slightly larger font for better readability */
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Ensure the main content is pushed down */
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Professional font stack */
+    padding-top: 200px; /* Adjust as needed to clear the injected content */
+}

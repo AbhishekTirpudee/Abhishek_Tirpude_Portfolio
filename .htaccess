@@ -1,0 +1,14 @@
+# Disable directory browsing
+Options -Indexes
+
+# Prevent caching of sensitive files (adjust file types as needed)
+<FilesMatch "\.(pdf|doc|docx|jpg|jpeg|png|gif|cert|certificate)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>
+
+# Optional: Restrict access to a specific directory (e.g., a 'secure_docs' folder)
+# <Directory /secure_docs>
+#     Require all denied
+# </Directory>
